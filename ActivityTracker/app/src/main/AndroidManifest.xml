@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.activitytracker">
+
+    <permission android:name="ActTrackerProvider.permission.READ_PROVIDER"/>
+    
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".ActivityTrackerApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ActivityTracker">
+        <activity android:name=".feed.BreakDownActivity"
+            android:parentActivityName=".main.MainActivity"/>
+        <activity android:name=".main.MainActivity"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.GPSService"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        
+        <provider
+            android:authorities="com.example.activitytracker.contentprovider.ActTrackerProvider"
+            android:name="com.example.activitytracker.contentprovider.ActTrackerProvider"
+            android:exported="true"
+            android:readPermission="ActTrackerProvider.permission.READ_PROVIDER"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

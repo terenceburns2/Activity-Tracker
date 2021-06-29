@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feed_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_feed"
+        android:title="@string/feed_label"/>
+
+    <item
+        android:id="@+id/record_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_record"
+        android:title="@string/record_label"/>
+
+    <item
+        android:id="@+id/profile_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_profile"
+        android:title="@string/profile_label"/>
+
+
+</menu>

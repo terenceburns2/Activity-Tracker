@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/furthestDistTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:gravity="center"
+            android:text="@string/furthest_dist_title"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/horizontalDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:alpha="0.5"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/furthestDist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/initial_dist"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalDivider"
+            app:layout_constraintEnd_toEndOf="@+id/furthestDistTitle"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="@+id/furthestDistTitle"
+            app:layout_constraintTop_toBottomOf="@+id/furthestDistTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/fastestPaceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fastest_pace"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/verticalDivider"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/furthestDist" />
+
+        <TextView
+            android:id="@+id/fastestPace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/initial_pace"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fastestPaceTitle"
+            app:layout_constraintStart_toStartOf="@+id/fastestPaceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/fastestPaceTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/longestDurationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/longest_duration"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/verticalDivider"
+            app:layout_constraintTop_toBottomOf="@+id/furthestDist" />
+
+        <TextView
+            android:id="@+id/longestDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/initial_time"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/longestDurationTitle"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="@+id/longestDurationTitle"
+            app:layout_constraintTop_toBottomOf="@+id/longestDurationTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/profile_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/rubik_light"
+            android:text="@string/profile_frag_title"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/verticalDivider"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.5"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalDivider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Activity Tracker</string>
+    <string name="record_frag_title">Start Tracking</string>
+    <string name="record_label">Record</string>
+    <string name="profile_label">Profile</string>
+    <string name="feed_label">Feed</string>
+    <string name="initial_dist">0.00</string>
+    <string name="initial_time">00:00:00</string>
+    <string name="initial_pace">0:00</string>
+    <string name="dialog_finish">Finish?</string>
+    <string name="finish_activity">Finish</string>
+    <string name="confirm_delete">Are you sure you want to delete?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="pace_title">Average Pace</string>
+    <string name="distance_title">Distance</string>
+    <string name="duration_title">Duration</string>
+    <string name="effort_title">Rating</string>
+    <string name="profile_frag_title">Achievements</string>
+    <string name="furthest_dist_title">Furthest Distance</string>
+    <string name="fastest_pace">Fastest Pace</string>
+    <string name="longest_duration">Longest Duration</string>
+    <string name="channel_name">GPSService channel</string>
+    <string name="channel_description">Notifications are sent through when the user starts tracking
+        their run. Location is continually monitored, making it of high priority to notify the user
+        of this behaviour.
+    </string>
+
+    <string-array name="users_effort">
+        <item>Light</item>
+        <item>Moderate</item>
+        <item>Challenging</item>
+        <item>Hard</item>
+    </string-array>
+
+</resources>

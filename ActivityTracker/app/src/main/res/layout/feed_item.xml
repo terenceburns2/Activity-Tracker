@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="monospace"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="50dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/distanceView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="5"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/avgPaceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="5"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/durationView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="5"
+                android:text="TextView"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
